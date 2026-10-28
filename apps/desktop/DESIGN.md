@@ -170,7 +170,8 @@ Sizes: `default`, `xs`, `overlay` (titlebar glyph counts).
   `Input` / `Textarea` / `SelectTrigger`. New text-entry controls compose it.
 - **`SearchField`** — borderless, underline-on-focus, auto-width. The only
   search input. Don't build boxed search bars; don't wrap it in a bordered tile.
-  Empty lists hide their search field.
+  Use theme-muted text and icons at full opacity, including when empty; focus
+  adds a primary-color underline. Empty lists hide their search field.
 - **`SegmentedControl`** — the choice control for small mutually-exclusive sets
   (color mode, tool-call display, usage period). Replaces radio piles and
   pill rows.
