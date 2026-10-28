@@ -159,6 +159,8 @@ reopens the gesture-less forced-navigation class the advisory closed.
   DOM rows, not the measurable host/helpers or terminal state. Do not reduce
   scrollback or replace parser state to save painting work. WebGL surfaces remain
   unchanged; hidden DOM-row suppression must leave fitting and font helpers measurable.
+- Root geometry variables are not theme changes. Authored custom CSS can depend
+  on those variables, so it must retain full repaint notifications.
 
 ## Nous free tier: state is pulled, never latched in the renderer
 
