@@ -882,7 +882,7 @@ export function PreviewPane({
         throw new Error('preview webview is not ready')
       }
 
-      const text = await webview.executeJavaScript('document.body ? document.body.innerText : ""')
+      const text = await runPreviewGuestScript(webview, 'document.body ? document.body.innerText : ""')
 
       return {
         text: typeof text === 'string' ? text : '',

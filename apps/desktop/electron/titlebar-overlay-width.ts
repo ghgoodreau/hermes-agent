@@ -1,5 +1,9 @@
 export const OVERLAY_FALLBACK_WIDTH = 144
 
+export function isHexColor(value: unknown): value is string {
+  return typeof value === 'string' && /^#[0-9a-f]{6}$/i.test(value)
+}
+
 interface TitleBarOverlayOptionsInput {
   platform?: 'linux' | 'mac' | 'windows' | 'wslg'
   darwinMajor?: number
