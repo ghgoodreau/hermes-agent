@@ -8,7 +8,7 @@ Production Hermes desktop captures for fork PRs [#8](https://github.com/ghgoodre
 - PR #8 after: `67defefd4642acd4bedf059392195b28ee9a3344`.
 - PR #9 after: `7a1c062a71264e812ca3b44039aa89e2ace96363`.
 
-All three packaged application build stamps were clean. Application archive SHA-256 values and observed runtime states are recorded in each PR's provenance JSON. Verification used actual native Electron renderer screenshots and real pointer/key events through CDP; no replacement UI, mocked app paint, or injected focus/selection state.
+All three packaged application build stamps were clean. Application archive SHA-256 values and observed runtime states are recorded in each PR's provenance JSON. Verification used actual native Electron renderer screenshots and real pointer/key events through CDP; no replacement UI or mocked app paint. The sidebar sequence explicitly discloses its initial focus helper; subsequent navigation and menu actions use real keys.
 
 ## PR #8 — close-button spacing
 
